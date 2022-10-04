@@ -1,0 +1,32 @@
+*, *::before, *::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    padding:4rem;
+}
+
+.main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 62.5rem) {
+    body{
+        padding: 0.5rem;
+    }
+    .main{
+        flex-direction: column;
+        gap:2rem;
+    }
+}
